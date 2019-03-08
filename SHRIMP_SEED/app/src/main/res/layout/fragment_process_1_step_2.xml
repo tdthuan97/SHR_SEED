@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageview_customclearance"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:src="@drawable/no_image"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY">
+        </ImageView>
+        <Button
+            android:id="@+id/button_hatchery_customclearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom clearance"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingbutton_custom_clearance_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_camera"
+        android:layout_gravity="bottom|right|end"
+        android:layout_margin="16dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingbutton_custom_clearance_pick_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_libary_img"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="16dp"/>
+</android.support.design.widget.CoordinatorLayout>

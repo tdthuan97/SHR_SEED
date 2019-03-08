@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Trader: "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinner_trader_in_req_hatchery"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp">
+
+        </Spinner>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Species"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penaeus vanamei"
+            android:textSize="16sp"
+            android:buttonTint="@color/colorPrimary"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penaeus monodon"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="@color/colorPrimary"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Pair: "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expected time: "
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <DatePicker
+            android:id="@+id/datepicker_hatchery_expected"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            android:datePickerMode="spinner">
+        </DatePicker>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Contract Date:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03/06/2019"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send request to Trader"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
